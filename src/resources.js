@@ -81,8 +81,6 @@ Resource.prototype = {
                 this.buttonElems[0].className = "button active"
                 this.buttonElems[1].className = "button active"
             }else{
-                this.buttonElems[0].className = "button inactive"
-                this.buttonElems[1].className = "button inactive"
             }
         }
     }
