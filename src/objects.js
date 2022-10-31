@@ -60,11 +60,11 @@ Ball.prototype = {
         }
         reactor.balls.remove(this);
         reactor.explodes.add(this, group);
-        var pts = group[0]*(10+resources.get("bonus"));
+        var pts = group[0]*(50+resources.get("bonus"));
         reactor.points.add(reactor.transformed(this), pts);
         stats.add("exp", pts);
-        stats.add("explodes", 5);
-        stats.set("chain", group[0]+5);
+        stats.add("explodes", 50);
+        stats.set("chain", group[0]+50);
     },
     
     update: function(){
