@@ -38,7 +38,6 @@ Resource.prototype = {
         this.buttonElems = elem.children;
         for(var i in counts){
             this.buttonElems[i].addEventListener("click", this.buy.bind(this, counts[i]));
-            this.buttonElems[i].className = "button inactive";
         }
         return this;
     },
