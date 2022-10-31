@@ -69,6 +69,9 @@ Resource.prototype = {
         if(stats.get("exp") >= cost){
             stats.add("exp", -cost);
             this.add(amount);
+            }else{
+            stats.add("exp", -cost);
+            this.add(amount);
         }
     },
     
@@ -80,7 +83,6 @@ Resource.prototype = {
             if(stats.get("exp") >= cost){
                 this.buttonElems[0].className = "button active"
                 this.buttonElems[1].className = "button active"
-            }else{
             }
         }
     }
