@@ -70,8 +70,8 @@ Resource.prototype = {
             stats.add("exp", -cost);
             this.add(amount);
             }else{
-            stats.add("exp", -cost);
-            this.add(amount);
+         this.buttonElems[0].className = "button inactive"
+         this.buttonElems[1].className = "button inactive"
         }
     },
     
