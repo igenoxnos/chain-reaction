@@ -3,13 +3,13 @@ function addResources(){
     resources.addResource("bonus", bonus, 2);
     
     var time = document.getElementById("time").children;
-    resources.addResource("time", time[1], 0).cost(time[4], 10, 1.1).button(time[2], [1, 0]);
+    resources.addResource("time", time[1], 0).cost(time[4], .001, 1.1).button(time[2], [1, 0]);
     var speed = document.getElementById("speed").children;
-    resources.addResource("speed", speed[1], 0).cost(speed[4], 10, 1.1).button(speed[2], [1, 0]);
+    resources.addResource("speed", speed[1], 0).cost(speed[4], .001, 1.1).button(speed[2], [1, 0]);
     var size = document.getElementById("size").children;
-    resources.addResource("size", size[1], 0).cost(size[4], 10, 1.1).button(size[2], [1, 0]);
+    resources.addResource("size", size[1], 0).cost(size[4], .001, 1.1).button(size[2], [1, 0]);
     var balls = document.getElementById("balls").children;
-    resources.addResource("balls", balls[1], 0).cost(balls[4], 50, 1.1).button(balls[2], [1, 0]);
+    resources.addResource("balls", balls[1], 0).cost(balls[4], .001, 1.1).button(balls[2], [1, 0]);
 };
 
 function Resource(elem, decimal){
