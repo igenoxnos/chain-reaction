@@ -57,8 +57,6 @@ function reset(){
         stats.reset(true);
         resources.reset();
         reactor.reset();
-        localStorage.clear();
-        save();
     }
 };
 
