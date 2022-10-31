@@ -279,6 +279,5 @@ Reactor.prototype = {
     reset: function(){
         this.balls.clear();
         this.explodes.clear();
-        this.points.clear();
     }
 };
